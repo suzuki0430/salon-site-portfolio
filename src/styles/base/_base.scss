@@ -1,0 +1,32 @@
+html {
+  font-size: 62.5%;
+  // background-color: #F4F1EC
+}
+
+body {
+  //font-family: Helvetica, Arial, sans-serif;
+  //font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: $m-size;
+  margin: 0;
+  padding: 0;
+  // background-color: #F4F1EC;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+// @media (min-width: 800px) {
+//   /* ウインドウ幅800px以上の時に適用されるスタイル */
+//   .container {
+//     max-width: 1000px;
+//   }
+// }
+//見出しマージン　margin-top: 0;
+//p要素行間　line-height: 1.6;
+//画像のマージン vertical-align: bottom;

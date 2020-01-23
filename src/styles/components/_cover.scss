@@ -1,0 +1,15 @@
+.cover {
+  padding-top: 200px;
+  padding-bottom: 100px; 
+  // background-image: url(../images/thema.jpg);
+  background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../images/thema.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.cover__content {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  color: white;
+  // margin-top: 0;
+}
