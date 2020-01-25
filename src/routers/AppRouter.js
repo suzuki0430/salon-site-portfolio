@@ -9,6 +9,8 @@ import ServiceListPage from '../components/ServiceListPage';
 import NewsPage from '../components/Newspage';
 import ContactPage from '../components/ContactPage';
 // import GoogleApiWrapper from '../components/ContactPage';
+import BookingComplete from '../components/BookingComplete';
+import RegisterNews from '../components/RegisterNews';
 import NotFoundPage from '../components/NotFoundPage';
 
 
@@ -22,7 +24,9 @@ const AppRouter = () => (
         <Route path="/booking" component={BookingPage} />
         <Route path="/servicelist" component={ServiceListPage} />
         <Route path="/news" component={NewsPage} />
+        <Route path="/registernews" component={RegisterNews} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/bookingcomplete" component={BookingComplete} />
         <Route component={NotFoundPage} />
       </Switch>
       <Footer />
