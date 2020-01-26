@@ -17,7 +17,7 @@ const ReserveForm = () => (
           <label for="exampleInputPassword">パスワード</label>
           <input type="password" className="form-control form-control-lg" id="exampleInputPassword" placeholder="パスワード"/>
         </div>
-        <button type="submit" className="btn btn-primary">ログイン</button>
+        <button type="submit" className="btn btn-primary btn-lg btn-block">ログイン</button>
       </form>
       <Link to="/booking" activeClassName="is-active" className="booking">予約はこちら</Link>
     </div>

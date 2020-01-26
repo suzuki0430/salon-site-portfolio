@@ -25,10 +25,12 @@ class RegisterNews extends React.Component {
         <Form
           onSubmitNewPost={
             (newPost) => this.saveNewPost(newPost) // （1）
-          } />
+          }
+        />
         <hr />
         <List
-          posts={this.state.posts} /> {/* （3） */}
+          posts={this.state.posts}
+        /> {/* （3） */}
       </div>
     );
   }

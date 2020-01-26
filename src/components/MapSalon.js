@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { GoogleApiWrapper, Map, Marker, InfoWindow } from 'google-maps-react';
 
 const mapStyles = {
   // 'display': 'inline-block',
-  width: '100%',
-  height: '50%',
+  // width: '100%',
+  // height: '50%',
   // 'position': 'relative',
   // top: '30rem'
 
 };
 
-class MapSalon extends Component {
+class MapSalon extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -38,7 +38,8 @@ class MapSalon extends Component {
   
   render() {
     return (
-      <div>
+      <div className="container">
+        <h2 className="map_name">所在地</h2>
         <div className="map">
           <Map
             style={mapStyles}
