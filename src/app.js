@@ -6,4 +6,17 @@ import './styles/styles.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 
-ReactDOM.render(<AppRouter />, document.getElementById('app'));
+import { Provider } from 'react-redux';
+import configureStore from './store/configureStore';
+
+const store = configureStore();
+
+const jsx = (
+  <Provider store={store}>
+    <AppRouter />
+  </Provider>
+);
+
+ReactDOM.render(jsx, document.getElementById('app'));
+
+// ReactDOM.render(<AppRouter />, document.getElementById('app'));
