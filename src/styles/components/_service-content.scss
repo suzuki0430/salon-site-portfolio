@@ -1,18 +1,22 @@
 
 .service-content__title {
-  text-align: center;
+  // text-align: center;
   font-weight: 500;
-  padding: $m-size 0 0 0;
+  // padding: $m-size 0 0 0;
   
 }
 
 .service-content {
   // width: 700px;
-  padding: 7rem 10rem 7rem 10rem;
+  padding: 7rem 0 7rem 0;
   // margin: 0 $m-size;
   // margin auto;
   background-color: #F4F1EC;
   // background-size: cover; 
+}
+
+.sevice-content__price {
+  font-size: 2rem;
 }
 
 .service-content > h2 {
@@ -26,6 +30,7 @@
   border: 2px solid #F5F4F4;
   border-radius: 1em;
   background-color: white;
+  // height: 200px;
 }
 
 .service-content__box > h2 {

@@ -1,6 +1,7 @@
 .reserve-content {
   // text-align: center;
-  padding: 7rem;
+  // padding: 7rem;
+  padding: 70px 0 70px 0;
   // margin: $m-size;
 }
 
@@ -12,4 +13,20 @@
 
 .booking {
   text-align: right;
+}
+
+.link_booking {
+  cursor: pointer;
+  display: inline-block;
+  color: $character;
+  margin-top: 5px;
+}
+
+.link_booking:visited {
+  color:red;
+}
+
+.link_booking:hover {
+  color: blue;
+  text-decoration: underline;
 }

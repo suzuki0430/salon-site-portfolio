@@ -21,3 +21,18 @@
   justify-content: space-around;
   padding: $m-size;
 }
+
+.link {
+  cursor: pointer;
+  color: $character;
+}
+
+.link:visited {
+  color:red;
+}
+
+.link:hover {
+  color: blue;
+  text-decoration: underline;
+}
+

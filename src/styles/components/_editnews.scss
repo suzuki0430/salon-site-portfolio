@@ -1,0 +1,23 @@
+.editNews {
+  margin: 70px 0;
+}
+
+.textarea {
+  white-space: pre-wrap;
+}
+
+.link_editNews {
+  cursor: pointer;
+  display: block;
+  text-align: right;
+  color: $character;
+}
+
+.link_editNews:visited {
+  color:red;
+}
+
+.link_editNews:hover {
+  color: blue;
+  text-decoration: underline;
+}

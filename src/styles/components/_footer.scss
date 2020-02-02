@@ -2,7 +2,8 @@
   background: #1E1C18;
   color: white;
   // margin-bottom: $xl-size;
-  padding: $m-size 0;
+  // padding: $m-size 0;
+  padding: 30px 0 10px 0;
 
 }
 
@@ -42,4 +43,18 @@
   display: flex;
   justify-content: space-around;
   padding: $m-size;
+}
+
+.footer_link {
+  cursor: pointer;
+  color: white;
+}
+
+.footer_link:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.footer_link:visited {
+  color: red;
 }

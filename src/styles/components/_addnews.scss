@@ -1,0 +1,23 @@
+.addNews {
+  margin: 70px 0;
+}
+
+.textarea {
+  white-space: pre-wrap;
+}
+
+.link_addNews {
+  cursor: pointer;
+  display:block;
+  text-align: right;
+  color: $character;
+}
+
+.link_addNews:visited {
+  color:red;
+}
+
+.link_addNews:hover {
+  color: blue;
+  text-decoration: underline;
+}

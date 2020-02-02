@@ -38,32 +38,34 @@ class MapSalon extends React.Component {
   
   render() {
     return (
-      <div className="container">
-        <h2 className="map_name">所在地</h2>
-        <div className="map">
-          <Map
-            style={mapStyles}
-            google = { this.props.google }
-            zoom = { 14 }
-            center = {{ lat: 35.681236, lng: 139.767125 }}
-            initialCenter = {{ lat: 35.681236, lng: 139.767125 }}
-          >
-            <Marker
-              onClick={this.onMarkerClick}
-              name={ "SALON STYLETTO" }
-              title = { "現在地" }
-              position = {{ lat: 35.681236, lng: 139.767125 }}
-            />
-            <InfoWindow
-              marker={this.state.activeMarker}
-              visible={this.state.showingInfoWindow}
-              onClose={this.onClose}
+      <div className="map_container">
+        <div className="container">
+          <h1 className="map_name border-bottom">アクセスマップ</h1>
+          <div className="map">
+            <Map
+              style={mapStyles}
+              google = { this.props.google }
+              zoom = { 14 }
+              center = {{ lat: 35.681236, lng: 139.767125 }}
+              initialCenter = {{ lat: 35.681236, lng: 139.767125 }}
             >
-              <div>
-                <h1>{this.state.selectedPlace.name}</h1>
-              </div>
-            </InfoWindow>
-          </Map>
+              <Marker
+                onClick={this.onMarkerClick}
+                name={ "SALON STYLETTO" }
+                title = { "現在地" }
+                position = {{ lat: 35.681236, lng: 139.767125 }}
+              />
+              <InfoWindow
+                marker={this.state.activeMarker}
+                visible={this.state.showingInfoWindow}
+                onClose={this.onClose}
+              >
+                <div>
+                  <h1>{this.state.selectedPlace.name}</h1>
+                </div>
+              </InfoWindow>
+            </Map>
+          </div>
         </div>
       </div>
     );
@@ -78,4 +80,3 @@ export default GoogleApiWrapper({
 
 //最寄り駅からの道筋
 //ピンに情報を表示
-//

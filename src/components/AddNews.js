@@ -4,14 +4,16 @@ import NewsForm from './NewsForm';
 import { addNews } from '../actions/news';
 
 const AddNews = (props) => (
-  <div className="container">
-    <h1>News記入フォーム</h1>
-    <NewsForm
-      onSubmit={(news) => {
-        props.dispatch(addNews(news));
-        props.history.push('/news');
-      }}
-    />
+  <div className="addNews">
+    <div className="container">
+      <h1>追加フォーム</h1>
+      <NewsForm
+        onSubmit={(news) => {
+          props.dispatch(addNews(news));
+          props.history.push('/news');
+        }}
+      />
+    </div>
   </div>
 );
 
