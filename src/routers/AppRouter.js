@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import HomePage from '../components/HomePage';
 import BookingPage from '../components/BookingPage';
 import ServiceListPage from '../components/ServiceListPage';
-import NewsPage from '../components/Newspage';
+import NewsPage from '../components/NewsPage';
 import ContactPage from '../components/ContactPage';
 // import GoogleApiWrapper from '../components/ContactPage';
 import BookingComplete from '../components/BookingComplete';
