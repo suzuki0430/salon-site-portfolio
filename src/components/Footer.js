@@ -12,11 +12,20 @@ const Footer = () => (
       <div className="footer__content row">
         <div className="footer__box col-12 col-md-6">
           <h3>ソーシャルメディア</h3>
-          <ul>
-            <li><img src={Facebook} alt="facebook" />  Facebook</li>
-            <li><img src={Twitter} alt="twitter" />  Twitter</li>
-            <li><img src={Youtube} alt="youtube" />  Youtube</li>
-          </ul>
+          <div className="footer__social">
+            <button className="social big ui facebook button">
+              <i className="facebook icon"></i>
+              Facebook
+            </button>
+            <button className="social big ui twitter button">
+              <i className="twitter icon"></i>
+              Twitter
+            </button>
+            <button className="social big ui youtube button">
+              <i className="youtube icon"></i>
+              YouTube
+            </button>
+          </div>
         </div>
         <div className="footer__box col-12 col-md-6">
           <h3>メールマガジン</h3>
@@ -51,3 +60,10 @@ const Footer = () => (
 );
 
 export default Footer;
+
+
+// <ul>
+// <li><img src={Facebook} alt="facebook" />  Facebook</li>
+// <li><img src={Twitter} alt="twitter" />  Twitter</li>
+// <li><img src={Youtube} alt="youtube" />  Youtube</li>
+// </ul>

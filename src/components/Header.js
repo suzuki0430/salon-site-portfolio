@@ -4,6 +4,7 @@ import Logo from '../images/logo.jpg';
 import { NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 // import { slide as Menu } from 'react-burger-menu';
+import GoogleAuth from './GoogleAuth';
 
 const Header = () => (
   <header className="header">
@@ -22,7 +23,7 @@ const Header = () => (
         <LinkContainer to="/contact" activeClassName="is-active">
           <NavItem className="link">Contact</NavItem>
         </LinkContainer>
-        <button className="btn btn-secondary btn-lg" type="login">Login</button>
+        <GoogleAuth />
       </div>
     </div>
   </header>
