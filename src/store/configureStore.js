@@ -2,11 +2,15 @@ import { createStore, combineReducers } from 'redux';
 import newsReducer from '../reducers/news';
 import authReducer from '../reducers/auth';
 
+import bookingReducer from '../reducers/booking';
+
+
 export default () => {
 
   const rootReducer = combineReducers({
     news: newsReducer,
-    auth: authReducer
+    auth: authReducer,
+    booking: bookingReducer
   });
 
   const store = createStore(
