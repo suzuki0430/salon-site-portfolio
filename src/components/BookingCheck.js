@@ -9,8 +9,8 @@ class BookingCheck extends React.Component {
   renderActions() {
     return (
       <React.Fragment>
-        <Link to="/bookingcomplete" className="ui button">OK</Link>
-        <Link to="/booking" className="ui button">Cancel</Link>
+        <Link to="/bookingcomplete" className="btn btn-primary btn-lg">OK</Link>
+        <Link to="/booking" className="btn btn-secondary btn-lg">Cancel</Link>
       </React.Fragment>
     );
   }
