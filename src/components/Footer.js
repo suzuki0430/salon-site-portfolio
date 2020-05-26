@@ -1,8 +1,4 @@
 import React from 'react';
-import Facebook from '../images/iconfinder_facebook_circle_color_107175.png';
-import Twitter from '../images/iconfinder_twitter_circle_color_107170.png';
-import Youtube from '../images/iconfinder_youtube_circle_color_107167.png';
-import { NavLink } from 'react-router-dom';
 import { NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
@@ -60,10 +56,3 @@ const Footer = () => (
 );
 
 export default Footer;
-
-
-// <ul>
-// <li><img src={Facebook} alt="facebook" />  Facebook</li>
-// <li><img src={Twitter} alt="twitter" />  Twitter</li>
-// <li><img src={Youtube} alt="youtube" />  Youtube</li>
-// </ul>

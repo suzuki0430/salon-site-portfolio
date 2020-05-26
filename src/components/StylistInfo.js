@@ -1,39 +1,35 @@
-import React from 'react';
-import { addName } from '../actions/booking';
-import { connect } from 'react-redux';
+import React from "react";
+import { addName } from "../actions/booking";
+import { connect } from "react-redux";
 
-class StylistInfo extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  onChange = () => {
-    const input = document.querySelector('.form-check-input');
+const StylistInfo = ({ id, name, addName }) => {
+  const onChange = () => {
+    const input = document.querySelector(".form-check-input");
     if (input.value) {
-      console.log(this.props.id, this.props.name)
-      this.props.addName(this.props.id, this.props.name)
+      console.log(id, name);
+      addName(id, name);
     } else {
-      return
+      return;
     }
-  }
+  };
 
-  render() {
-    return (
-      <div className="container">
-        <div className="form-group form-check">
-          <input onChange={this.onChange} className="form-check-input" type="checkbox" value={this.props.id} />
-          <label className="form-check-label">{this.props.name}</label>
-        </div>
+  return (
+    <div className="container">
+      <div className="form-group form-check">
+        <input
+          onChange={onChange}
+          className="form-check-input"
+          type="checkbox"
+          value={id}
+        />
+        <label className="form-check-label">{name}</label>
       </div>
-    )
-  }
+    </div>
+  );
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  addName: (id, name) => dispatch(addName(id, name))
+  addName: (id, name) => dispatch(addName(id, name)),
 });
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(StylistInfo);
+export default connect(null, mapDispatchToProps)(StylistInfo);

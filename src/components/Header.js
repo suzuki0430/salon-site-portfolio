@@ -3,7 +3,6 @@ import Logo from '../images/logo.jpg';
 // import { NavLink } from 'react-router-dom';
 import { NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-// import { slide as Menu } from 'react-burger-menu';
 import GoogleAuth from './GoogleAuth';
 
 const Header = () => (
