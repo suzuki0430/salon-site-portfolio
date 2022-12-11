@@ -29,7 +29,7 @@
     "babel-preset-react": "^6.24.1",
     "bootstrap": "^4.4.1",
     "css-loader": "^3.4.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^5.0.2",
     "google-maps-react": "^2.0.2",
